@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  color: white;
+  background-color: beige;
+}
+#container {
+  text-align: center;
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+#header {
+  font-size: 2.5em;
+  width: 1180px;
+  padding: 20px 0;
+  margin: 10px;
+  background-color: #5514ac;
+}
+.sidebar {
+  padding: 10px;
+  width: 200px;
+  margin: 0 10px;
+  background-color: #0b0cac;
+  font-size: 1.5em;
+}
+.sidebarHidden {
+  display: none;
+}
+.main {
+  min-height: 700px;
+  margin: 10px;
+  color: black;
+  background-color: #d2d2d2;
+  font-size: 0.8em;
+  text-align: left;
+  padding: 30px;
+}
+#wrapper {
+  width: 1200px;
+  position: relative;
+}
+#footer {
+  clear: both;
+  width: 1160px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: burlywood;
+  text-align: center;
+  bottom: 0;
+  font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
+  #wrapper {
+    width: 100%;
+  }
+  #header {
+    font-size: 3em;
+    width: 98%;
+    margin: 1%;
+    padding: 5% 0;
+  }
+  #leftBar {
+    padding: 10px;
+    width: 200px;
+    margin: 0 10px;
+    background-color: #0b0cac;
+    font-size: 1.5em;
+    font-size: 2em;
+    width: 98%;
+    padding: 1% 0;
+    margin: 0 1%;
+  }
+  .main {
+    margin: 1%;
+    overflow: hidden;
+    font-size: 1.1em;
+    padding: 4%;
+    padding-bottom: 5em;
+    min-height: 500px;
+  }
+  #rightBar {
+    padding: 10px;
+    width: 200px;
+    margin: 0 10px;
+    background-color: #0b0cac;
+    font-size: 1.5em;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+    padding: 1% 0;
+    border-top: 6px solid white;
+    font-size: 2em;
+    margin: 0 1%;
+  }
+  #footer {
+    width: 94%;
+    margin: 0 1%;
+    padding: 1% 2%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  #container {
+    width: 760px;
+  }
+  #wrapper {
+    width: 760px;
+  }
+  #header {
+    font-size: 2.8em;
+    width: 740px;
+  }
+  #leftBar {
+    width: 200px;
+    margin: 0 10px;
+    background-color: #0b0cac;
+    font-size: 1.5em;
+    font-size: 1.8em;
+    width: 720px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .main {
+    margin: 10px;
+    overflow: hidden;
+    font-size: 1em;
+    padding: 20px;
+    min-height: 600px;
+  }
+  #rightBar {
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #0b0cac;
+    font-size: 1.5em;
+    font-size: 1.8em;
+    float: right;
+    min-height: 200px;
+    padding: 10px 5px;
+    width: 200px;
+  }
+  #footer {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #leftBar {
+    padding: 10px;
+    width: 200px;
+    margin: 0 10px;
+    background-color: #0b0cac;
+    font-size: 1.5em;
+    float: left;
+    overflow: auto;
+    min-height: 300px;
+  }
+  .main {
+    overflow: hidden;
+  }
+  #rightBar {
+    padding: 10px;
+    width: 200px;
+    margin: 0 10px;
+    background-color: #0b0cac;
+    font-size: 1.5em;
+    float: right;
+    overflow: auto;
+    min-height: 300px;
+  }
+}
